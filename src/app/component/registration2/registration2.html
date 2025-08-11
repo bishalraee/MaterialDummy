@@ -1,0 +1,38 @@
+<mat-card>
+    <mat-card-content>
+        <form [formGroup]="registrationForm">
+            <mat-form-field>
+                <mat-label>Username</mat-label>
+                <input matInput placeholder="Enter your username" formControlName="username" />
+             </mat-form-field>
+
+             <mat-form-field>
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="Enter your Password" formControlName="password"/>
+             </mat-form-field>
+
+             <mat-form-field>
+                <mat-label>Phone Number</mat-label>
+                <input matInput placeholder="Enter your phone number" formControlName="phonenumber"/>
+             </mat-form-field>
+
+             <div class = "checkbox">
+                <mat-label><strong>Courses Available</strong></mat-label>
+                <mat-checkbox formControlName="php">PHP</mat-checkbox>
+                <mat-checkbox formControlName="java">Java</mat-checkbox>
+                <mat-checkbox formControlName="python">Python Programming</mat-checkbox>
+                <mat-checkbox formControlName="ai">Artificial Intelligence</mat-checkbox>
+             </div>
+    
+
+             <mat-form-field> <!--textarea here-->
+                <mat-label>Username</mat-label>
+                <input matInput placeholder="Enter your username" />
+             </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-footer>
+        <button mat-button="filled" color="primary">Save</button>
+        <button mat-button="filled" color="warn" (click)="onReset()">Reset</button>
+    </mat-card-footer>
+</mat-card>

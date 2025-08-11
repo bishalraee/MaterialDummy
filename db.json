@@ -1,0 +1,60 @@
+{
+    "customer":[
+        {
+            "code": 1,
+            "name": "Ram kumar",
+            "phone": "123456",
+            "email":"aa@yahoo.com",
+            "status": "Active"
+        },
+          {
+            "code": 2,
+            "name": "Sita kumari",
+            "phone": "123456",
+            "email":"aa@yahoo.com",
+            "status": "Non Active"
+        },
+          {
+            "code": 3,
+            "name": "Gita Kumari",
+            "phone": "123456",
+            "email":"aa@yahoo.com",
+            "status": "Active"
+        },
+          {
+            "code": 4,
+            "name": "Hari prasad",
+            "phone": "123456",
+            "email":"aa@yahoo.com",
+            "status": "Non Active"
+        },
+           {
+            "code": 5,
+            "name": "Ram kumar",
+            "phone": "123456",
+            "email":"aa@yahoo.com",
+            "status": "Active"
+        },
+          {
+            "code": 6,
+            "name": "Sita kumari",
+            "phone": "123456",
+            "email":"aa@yahoo.com",
+            "status": "Non Active"
+        },
+          {
+            "code": 7,
+            "name": "Gita Kumari",
+            "phone": "123456",
+            "email":"aa@yahoo.com",
+            "status": "Active"
+        },
+          {
+            "code": 8,
+            "name": "Hari prasad",
+            "phone": "123456",
+            "email":"aa@yahoo.com",
+            "status": "Non Active"
+        }
+    ]
+}

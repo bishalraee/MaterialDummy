@@ -1,0 +1,18 @@
+mat-card{
+    margin: 2%;
+    text-align: left;
+    mat-form-field{
+        width: 45%;
+        margin: 5px;
+    }
+    mat-card-footer{
+        display: flex;
+        justify-content: right;
+        margin-top: 20px;
+    }
+    .checkbox{
+       display: flex;
+        flex-direction: column;
+        margin-top: 10px; 
+    }
+}
