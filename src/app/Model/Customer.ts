@@ -1,7 +1,7 @@
 export interface Customer{
-    code:string;
+    id:number; //changed from code to id for consistency with db.json
     name:string;
     email:string;
     phone:string;
-    active:string;
+    status:string;
 }

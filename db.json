@@ -1,60 +1,53 @@
 {
-    "customer":[
-        {
-            "code": 1,
-            "name": "Ram kumar",
-            "phone": "123456",
-            "email":"aa@yahoo.com",
-            "status": "Active"
-        },
-          {
-            "code": 2,
-            "name": "Sita kumari",
-            "phone": "123456",
-            "email":"aa@yahoo.com",
-            "status": "Non Active"
-        },
-          {
-            "code": 3,
-            "name": "Gita Kumari",
-            "phone": "123456",
-            "email":"aa@yahoo.com",
-            "status": "Active"
-        },
-          {
-            "code": 4,
-            "name": "Hari prasad",
-            "phone": "123456",
-            "email":"aa@yahoo.com",
-            "status": "Non Active"
-        },
-           {
-            "code": 5,
-            "name": "Ram kumar",
-            "phone": "123456",
-            "email":"aa@yahoo.com",
-            "status": "Active"
-        },
-          {
-            "code": 6,
-            "name": "Sita kumari",
-            "phone": "123456",
-            "email":"aa@yahoo.com",
-            "status": "Non Active"
-        },
-          {
-            "code": 7,
-            "name": "Gita Kumari",
-            "phone": "123456",
-            "email":"aa@yahoo.com",
-            "status": "Active"
-        },
-          {
-            "code": 8,
-            "name": "Hari prasad",
-            "phone": "123456",
-            "email":"aa@yahoo.com",
-            "status": "Non Active"
-        }
-    ]
+  "customer": [
+    {
+      "id": "2",
+      "name": "hari prasad timilsina",
+      "email": "aa@yahoo.com",
+      "phone": "123456",
+      "status": "Non Active"
+    },
+    {
+      "id": "3",
+      "name": "Gita Kumari",
+      "phone": "123456",
+      "email": "aa@yahoo.com",
+      "status": "Active"
+    },
+    {
+      "id": "4",
+      "name": "Hari prasad",
+      "phone": "123456",
+      "email": "aa@yahoo.com",
+      "status": "Non Active"
+    },
+    {
+      "id": "5",
+      "name": "Ram kumar",
+      "phone": "123456",
+      "email": "aa@yahoo.com",
+      "status": "Active"
+    },
+    {
+      "id": "6",
+      "name": "Sita kumari",
+      "phone": "123456",
+      "email": "aa@yahoo.com",
+      "status": "Non Active"
+    },
+    {
+      "id": "7",
+      "name": "Gita Kumari",
+      "phone": "123456",
+      "email": "aa@yahoo.com",
+      "status": "Active"
+    },
+    {
+      "id": "8",
+      "name": "rudra prasad",
+      "email": "yyaaa@yahoo.com",
+      "phone": "1234",
+      "status": "active"
+    }
+  ]
 }

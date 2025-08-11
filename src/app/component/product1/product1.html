@@ -9,8 +9,8 @@
     <mat-card-content>
         <table matSort mat-table [dataSource]="dataSource" class="mat-elevation-z24"> <!--mat-elevation-z24 is custom css property for giving shadow 24 is deep, others are 8,2,0 -->
             <ng-container matColumnDef="code">
-                <th mat-sort-header mat-header-cell *matHeaderCellDef>Code</th>
-                <td mat-cell *matCellDef="let element">{{element.code}}</td>
+                <th mat-sort-header mat-header-cell *matHeaderCellDef>ID</th>
+                <td mat-cell *matCellDef="let element">{{element.id}}</td>
             </ng-container> 
 
             <ng-container matColumnDef="name">
@@ -24,7 +24,7 @@
             </ng-container> 
 
             <ng-container matColumnDef="phone">
-                <th mat-header-cell *matHeaderCellDef>Email</th>
+                <th mat-header-cell *matHeaderCellDef>Phone</th>
                 <td mat-cell *matCellDef="let element">{{element.phone}}</td>
             </ng-container>
             
@@ -36,9 +36,14 @@
             <ng-container matColumnDef="action">
                 <th mat-header-cell *matHeaderCellDef>Action</th>
                 <td mat-cell *matCellDef="let element">
-                     <button matButton="filled" color="primary">Edit</button>
-                      <button matButton="filled" color="warn">Delete</button>
-                </td>
+                    <!--these buttons code are replaced with the later one-->
+                     <!-- <button matButton="filled" color="primary">Edit</button>
+                      <button matButton="filled" color="warn">Delete</button> -->
+
+                    <!--replaced with the given one-->
+                    <button matButton="filled" color="primary" (click)="editCustomer(element)">Edit</button>
+                    <button matButton="filled" color="warn" (click)="deleteCustomer(element.id)">Delete</button>
+                </td> 
             </ng-container> 
 
             <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
