@@ -1,0 +1,28 @@
+{
+  "client": [
+    {
+      "id": "b35e",
+      "username": "bishal rai",
+      "password": "abcdef",
+      "phonenumber": "99999933",
+      "course": "",
+      "php": true,
+      "java": false,
+      "python": false,
+      "ai": false,
+      "feedback": "hello everyone"
+    },
+    {
+      "id": "7e4d",
+      "username": "sita",
+      "password": "fsfsfsf",
+      "phonenumber": "89899",
+      "course": "",
+      "php": true,
+      "java": false,
+      "python": false,
+      "ai": false,
+      "feedback": "helloo"
+    }
+  ]
+}

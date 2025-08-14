@@ -14,6 +14,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { Registration } from '../registration/registration';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 //added imports for edit and delete
 import {MatDialog} from '@angular/material/dialog';
@@ -22,7 +23,7 @@ import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-product1',
-  imports: [MatTableModule, MatPaginatorModule, MatSortModule, MatCardModule,MatSort,MatFormFieldModule,MatInputModule,MatButtonModule],
+  imports: [MatTableModule, MatPaginatorModule, MatSortModule, MatCardModule,MatSort,MatFormFieldModule,MatInputModule,MatButtonModule,MatIconModule],
   templateUrl: './product1.html',
   styleUrl: './product1.scss'
 })
@@ -79,7 +80,24 @@ export class Product1 {
         this.loadCustomers();
       });
     }    
+  }
 
-}
+  addCustomer(){
+    const dialogRef = this.dialog.open(Registration,{
+      width: '500px',
+      data: {} //pass empty data for new customer
+    });
+
+    dialogRef.afterClosed().subscribe((result) => {
+      if (result){
+        //add new customer to database via service
+        this.service.AddCustomer(result).subscribe(() =>{
+          console.log('Customer added successfully');
+          this.loadCustomers(); //reload the customer list after adding
+          
+        });
+      }
+    });
+  }
 }
 

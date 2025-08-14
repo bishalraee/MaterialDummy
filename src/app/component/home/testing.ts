@@ -8,32 +8,24 @@ import { Registration } from '../../services/registration';
 import { Client } from '../../Model/client';
 import { MatTableDataSource } from '@angular/material/table';
 
-
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MatCardModule, MatTableModule,MatFormFieldModule,MatButtonModule,MatInputModule],
+  imports: [MatCardModule, MatTableModule, MatFormFieldModule, MatButtonModule, MatInputModule],
   templateUrl: './home.html',
-  styleUrl: './home.scss'
+  styleUrls: ['./home.scss']
 })
 export class Home {
-
   clientlist!: Client[];
-  dataSource: any;
-  displayedColumns: string[] = ['username', 'password', 'phone', 'course','feedback']; //columns to display in the table
+  dataSource: MatTableDataSource<Client>;
+  displayedColumns: string[] = ['username', 'password', 'phone', 'course', 'feedback'];
 
-  constructor(private service:Registration) {
+  constructor(private service: Registration) {
     this.dataSource = new MatTableDataSource<Client>([]);
     this.loadCustomers();
   }
 
   loadCustomers() {
-    //this part is the code i wrote before and was not populating the array for course
-    // this.service.getClient().subscribe(res => {
-    //     this.clientlist = res;
-    //     this.dataSource = new MatTableDataSource<Client>(this.clientlist);
-    // });
-    //the code here is for populating the array for course
     this.service.getClient().subscribe({
       next: (res: any) => {
         // Transform the raw JSON data into Client objects
@@ -52,7 +44,7 @@ export class Home {
       }
     });
   }
-  
+
   // Helper method to derive courses from boolean fields
   private getCourses(item: any): string[] {
     const courses = [];
@@ -63,11 +55,9 @@ export class Home {
     return courses.length > 0 ? courses : ['None']; // Default to 'None' if no courses
   }
 
-  applyFilter(data: Event) {
-    const value = (data.target as HTMLInputElement).value;
-    // Assuming you have a dataSource to filter, you would apply the filter here
+  applyFilter(event: Event) {
+    const value = (event.target as HTMLInputElement).value;
     this.dataSource.filter = value.trim().toLowerCase();
     console.log('Filter applied:', value);
   }
-
 }

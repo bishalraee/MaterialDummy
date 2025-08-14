@@ -1,25 +1,11 @@
 {
   "customer": [
     {
-      "id": "2",
-      "name": "hari prasad timilsina",
-      "email": "aa@yahoo.com",
-      "phone": "123456",
-      "status": "Non Active"
-    },
-    {
-      "id": "3",
-      "name": "Gita Kumari",
-      "phone": "123456",
-      "email": "aa@yahoo.com",
-      "status": "Active"
-    },
-    {
       "id": "4",
-      "name": "Hari prasad",
-      "phone": "123456",
+      "name": "gggg",
       "email": "aa@yahoo.com",
-      "status": "Non Active"
+      "phone": "123456",
+      "status": "active"
     },
     {
       "id": "5",
@@ -47,6 +33,20 @@
       "name": "rudra prasad",
       "email": "yyaaa@yahoo.com",
       "phone": "1234",
+      "status": "active"
+    },
+    {
+      "id": "10",
+      "name": "jivan",
+      "email": "jivan@yahoo.com",
+      "phone": "0943949",
+      "status": "active"
+    },
+    {
+      "id": "222",
+      "name": "fafafafa",
+      "email": "fafaaf",
+      "phone": "72527",
       "status": "active"
     }
   ]

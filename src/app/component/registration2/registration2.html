@@ -26,13 +26,13 @@
     
 
              <mat-form-field> <!--textarea here-->
-                <mat-label>Username</mat-label>
-                <input matInput placeholder="Enter your username" />
+                <mat-label>Your feedback here....</mat-label>
+                <textarea matInput placeholder="Enter your feedback" formControlName="feedback"></textarea>
              </mat-form-field>
         </form>
     </mat-card-content>
     <mat-card-footer>
-        <button mat-button="filled" color="primary">Save</button>
+        <button mat-button="filled" color="primary" (click)="onSave()">Save</button>
         <button mat-button="filled" color="warn" (click)="onReset()">Reset</button>
     </mat-card-footer>
 </mat-card>

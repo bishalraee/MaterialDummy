@@ -4,7 +4,10 @@
         <mat-form-field>
             <mat-label>Search</mat-label>
             <input matInput (keyup)="applyFilter($event)" placeholder="Enter name:">
-        </mat-form-field>
+             <!-- <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon> -->
+          
+        </mat-form-field>    
+          <button matButton="filled" color="primary" (click)="addCustomer()">Add</button>
     </mat-card-header>
     <mat-card-content>
         <table matSort mat-table [dataSource]="dataSource" class="mat-elevation-z24"> <!--mat-elevation-z24 is custom css property for giving shadow 24 is deep, others are 8,2,0 -->

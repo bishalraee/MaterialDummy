@@ -20,4 +20,8 @@ export class Master {
   DeleteCustomer(id:number):Observable<any>{
     return this.http.delete(`http://localhost:3000/customer/${id}`);
   } 
+
+  AddCustomer(customer:Customer):Observable<any>{
+    return this.http.post("http://localhost:3000/customer", customer);
+  }
 }
